@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=range] {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>range input type</h1>
+
+    <form action="">
+        <label for="">weight</label>
+        <!-- steps are like unit -->
+        <input type="range" id="wgt" name="wgt" min="0" max="50" value="0" step="0.5">
+        <br><br>
+        <hr>
+    </form>
+
+    <h1 id="output"></h1>
+
+    <script>
+        // inorder to show the value of range input type we have to use javascript
+        // these is the java script code to show an value on screen
+
+        let wgt = document.getElementById("wgt");
+        let output = document.getElementById("output");
+
+        wgt.oninput = function(){
+        output.innerText = wgt.value + "kg";
+    }
+
+    </script>
+    
+</body>
+</html>

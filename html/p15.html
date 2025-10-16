@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>forms</h1>
+    <form action="" autocomplete="" enctype="" method="get" name="">
+        <fieldset>
+            <legend>personal info</legend>
+
+            <label for="fname">First name</label>
+            <input type="text"  id="fname" name="fname" value="admin" readonly placeholder="enter your first name" required>
+            <!-- readonly is removed then the value admin can be removed from user -->
+
+            <br><br>
+            <label for="lname">Last name</label>
+            <input type="text"  id="lname" name="lname" placeholder="enter your last name" required>
+
+            <br><br>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="clear">
+
+
+            <!-- the value displays whatever we write in value to users -->
+            
+        </fieldset>
+    </form>
+
+    <!-- 
+    form tag
+    fieldset tag
+    legend tag =these two are an optional tags 
+
+    label tag -title for the input tag
+    
+    input tag -15+ types   
+
+    1. text
+      attributes - type, id, name, value, placeholder, required, readonly
+    2. password
+    3. email, number, tel, url, date, time, color, search
+    4. checkbox, radio, file, hidden, submit, reset, button
+    5. image, datalist, range, month, week, datetime-local and more these all comes under different input types
+
+    select tag -dropdown list
+    textarea tag -multi line text input
+
+
+    attributes of form tag
+    action=> server path/server file path/url address
+    method=> get=> data will be visible in url
+            post=> data will not be visible in url(hidden)
+
+    enctype=> urlencoded is default encoding formate 
+    application/x-www-form-urlencoded(default)
+             multipart/form-data ; used when we have file input type in our form
+             text/plain
+
+    autocomplete=> on(default)autofill will be on / off autofill will be off
+
+     -->
+</body>
+</html>
