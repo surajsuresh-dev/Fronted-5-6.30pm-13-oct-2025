@@ -14,5 +14,5 @@ types of selectors
     d.Adjacent Sibling(+)
 6.Attribute Selector
 7.Pseudo Selector
-    a.Pseude class
-    b.Pseudo element
+    a.Pseude class (:)
+    b.Pseudo element(::)
