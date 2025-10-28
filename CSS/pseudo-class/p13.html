@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label:focus-within{
+            color: rgb(70, 13, 70);
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:focus-within</h1>
+    <form action="">
+        <!-- SO HERE the input is within the label tag -->
+        <label for="">Enter your Name
+            <input type="text" name="name" id="name">
+        </label>
+
+        <br><br>
+        <!-- here the input is outside the label tag
+         so we can know the diff while selecting the box in output -->
+        <label for="">Enter your Email</label>
+            <input type="email" name="email" id="email">
+    </form>
+</body>
+</html>

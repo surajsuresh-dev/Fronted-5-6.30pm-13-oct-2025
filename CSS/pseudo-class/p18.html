@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            list-style-type:lower-roman;
+            color:rgb(73, 0, 229)
+        }
+        /* inorder to put specific targeted nest to aplly 
+        color and more we use where */
+
+        :where(ol,ul) {
+            color:rgb(0, 236, 157);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>:Where()</h1>
+
+    <ol>
+        <li>FRONTEND</li>
+        <li>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Reactjs</li>
+            </ul>
+        </li>
+        <li>BACKEND</li>
+        <li>
+            <ul>JAVA</ul>
+            <ul>PYTHON</ul>
+            <ul>NODEJS</ul>
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{
+            border: 2px solid green;
+            outline:none
+        }
+
+        input:disabled{
+            border: 2px solid red;
+            outline:none
+        }
+
+        p:empty{
+            background-color: gray;
+            padding:20px;
+            }
+    </style>
+</head>
+<body>
+    <h1>:disabled and :enabled :empty</h1>
+
+    <form action="">
+        <!-- input enabled -->
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" >
+        <br>
+        <!-- disabled input -->
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" disabled>
+        <br><br>
+
+        <!-- enabled -->
+
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+    </form>
+
+    <hr>
+
+    <div>
+        <!-- empty in p  -->
+        <p>Sample contents</p>
+        <p>sample contents</p>
+        <p></p>
+        <p></p>
+        <p>sample contents</p>
+    </div>
+</body>
+</html>

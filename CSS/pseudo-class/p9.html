@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1st child */
+        p:first-child,
+        ul li:first-child{
+            color: red;
+            font-size: 2rem;
+        }
+
+        /* last child */
+        p:last-child,
+        ul li:last-child{
+            color: blue;
+            font-size: 2rem;
+        }
+
+        /* nth child */
+        p:nth-child(4),
+        ul li:nth-child(3){
+            color: green;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>:First-child ,:Last-child and :nt-child</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>NodeJS</li>
+    </ul>
+
+    <div>
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+        <p>para-4</p>
+        <p>para-5</p>
+
+    </div>
+</body>
+</html>

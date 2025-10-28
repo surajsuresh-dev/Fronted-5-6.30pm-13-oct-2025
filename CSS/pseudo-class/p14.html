@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* if we usr first-of-child the first child is a para
+        so it cant apply for h tag but can apply using p at first 
+        so we use an first-of-type to aplly for 1st h tag*/
+
+        h1:first-of-type{
+            color: red;
+            
+        }
+
+        /* last-of-type */
+        h1:last-of-type{
+            color: blue;
+            
+        }
+
+        /* nth-of-type */
+        h1:nth-of-type(3){
+            color: green;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>:first-of-type ,:last-of-type ,:nth-of-type</h2>
+
+    <div class="container">
+        <p>sample para</p>
+        <h1>header tag 1</h1>
+        <p>sample para</p>
+        <h1>header tag 2</h1>
+        <p>sample para</p>
+        <h1>header tag 3</h1>
+        <p>sample para</p>
+        <h1>header tag 4</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:read-only{
+            background-color: lightgray;
+        }
+
+        input:required{
+            border: 2px solid aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>:read-only and :required</h1>
+    <form action="">
+        <!-- if there is required it does not allow us
+          to submit until we fill it -->
+        <label for="">Enter name</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+
+        <label for="">Enter email</label>
+        <input type="email" name="email" id="email" value="sample@gmail.com " readonly>
+        <br><br>
+
+        <label for="">Mobile</label>
+        <input type="mobile" name="mobile" id="mobile" required>
+        <br><br>
+
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
