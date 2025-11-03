@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container div {
+             width: 200px;
+            height: 200px;
+            border-color: aquamarine;
+            border-width: 1rem;
+            margin: 20px;
+            padding: 10px;
+            background-color: #ccc;
+        }
+
+        .b1{
+            border-inline: solid;
+            writing-mode: horizontal-tb;
+        }
+
+        .b2{
+            border-inline: dashed red;
+            writing-mode: vertical-rl;
+        }
+
+        .b3{
+            border-inline: 16px solid;
+            writing-mode: horizontal-tb;
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border-inline  (depricated)</h1>
+    <div class="container">
+        <div class="b1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ullam earum molestiae aperiam aut consequatur dolor, corrupti, perspiciatis, fugiat accusantium numquam aliquam. Nisi architecto quaerat libero, tenetur in consequatur neque!
+        </div>
+        <div class="b2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum veritatis praesentium repellendus libero placeat doloribus temporibus quo minima. Ad at eligendi corporis omnis voluptas sequi odit earum quam eum.
+        </div>
+        <div class="b3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus aliquam obcaecati fugiat neque nam aperiam alias dolore tempore vero, maxime ab at saepe ipsum itaque? Cum sed omnis distinctio culpa.
+        </div>
+    </div>
+</body>
+</html>

@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container div {
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            margin: 20px;
+            border-width: 30px;
+            border-style: solid;
+        }
+        .b1{
+            border-image: linear-gradient(to right, red, yellow) 30;
+
+        }
+        .b2{
+            border-image: repeating-linear-gradient(30deg, blue, cyan 10px) 10;
+        }
+    </style>
 </head>
 <body>
-    <h1>Border-image</h1>
-    <section class="container"></section>
+    <h1>Border iamge</h1>
+    <section class="container">
+        <div class="b1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae eaque illum natus, minus cum explicabo porro dolor quam ipsa ducimus est pariatur cumque magni corporis voluptatibus. Neque exercitationem labore voluptatum!</div>
+        <div class="b2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed cum optio, nostrum natus eum veritatis, nisi inventore voluptate expedita totam dolore iure magni error aliquid maiores voluptates nam? Numquam, vel.</div>
+        <div class="b4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quisquam blanditiis temporibus ducimus tempore aspernatur, accusamus ipsam qui nisi necessitatibus mollitia possimus totam impedit eos tempora. Tenetur consequuntur nobis ratione!</div>
+        <div class="b5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ipsa aliquam inventore itaque officia libero esse odit numquam expedita exercitationem repellendus quae saepe sit vitae assumenda, molestiae et ea eos.</div>
+    </section>
 </body>
 </html>
