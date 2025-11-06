@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example {
+            font-size: 3rem;
+            font-weight: bold;
+            background-image: linear-gradient(to bottom right, green, orange);
+            padding: 0px 15px;
+            margin-left: 1rem;
+            line-height: 3; 
+            box-shadow: 6px 4px 5px;
+            border-radius: 1rem;
+            /* clone makes every break as new element 
+            where as slice just slice the elemnet or breaks an element */
+            box-decoration-break: clone;
+        }
+    </style>
+</head>
+<body>
+    <h1>box-decoration-break </h1>
+
+    <p>
+        <span class="example">welcome to<br>the  css <br>box propert</span>
+    </p>
+</body>
+</html>
