@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .keyboard{
+            display: grid;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(5,80px);
+            gap: 10px;
+            width: max-content;
+            margin: 50px auto;
+        }
+        .keyboard div{
+            border: 2px solid #222;
+            background-color: cornflowerblue;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+         div:nth-child(8){
+            grid-row: span 2;
+        }
+
+        div:nth-child(15){
+            grid-row: span 2;
+        }
+
+         div:nth-child(16){
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <section class="keyboard">
+        <div>num lock</div>
+        <div>/</div>
+        <div>*</div>
+        <div>-</div>
+
+
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>+</div>
+
+
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        
+        
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>enter</div>
+
+        <div>0</div>
+        <div>.</div>
+    </section>
+</body>
+</html>
