@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            counter-reset: ch;
+        }
+
+        h2::before {
+            counter-increment: ch;
+            content: counter(ch) ". ";
+        }
+
+        h2 {
+            counter-reset: tp;
+        }
+        h4::before {
+            counter-increment: tp;
+            content: counter(ch) "." counter(tp) " ";
+            margin-left: 1rem;
+        }
+
+        h4 {
+            counter-reset: sp;
+        }
+        p::before {
+            counter-increment: sp;
+            content: counter(ch) "." counter(tp) "." counter(sp) " ";
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="containers"></div>
+    <h1>TABLE OF CONTENTS</h1>
+
+    <div class="box">
+        <h2>HTML</h2>
+        <h4>Header Tag</h4>
+            <p>h1-h6</p>
+        <h4>Paragraph and Formate Tag</h4>
+        <h4>List Tag</h4>
+          <p>ordered list</p>
+          <p>unorderd list</p>
+          <p>discription list</p>
+
+        <h2>CSS</h2>
+            <h4>Selectors</h4>
+            <h4>Colors</h4>
+                <p>color name</p>
+                <p>hexadecimal</p>
+                <p>rgb and rgba</p>
+            <h4>Box Model</h4>
+           
+        <h2>JAVA SCRIPTS</h2>
+            <h4>Basic operation</h4>
+            <h4>operators</h4>
+            <h4>Conditional statement</h4>
+            <h4>Loops</h4>
+                <p>For loop</p>
+                <p>While loop</p>
+                <p>do while loops</p>
+
+
+    </div>
+</body>
+</html>
