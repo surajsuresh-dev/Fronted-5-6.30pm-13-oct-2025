@@ -5,3 +5,8 @@ setInterval(function(){
     let id = Math.floor(Math.random()*2);
     wBlk.innerText = works[id];
 },3000)
+
+
+// to update current year in footer
+let yr = document.getElementById("yr");
+yr.innerText = new Date().getFullYear();
