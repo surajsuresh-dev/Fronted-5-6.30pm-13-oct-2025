@@ -7,6 +7,15 @@ setInterval(function(){
 },3000)
 
 
-// to update current year in footer
+// to update current year in footer*/
 let yr = document.getElementById("yr");
 yr.innerText = new Date().getFullYear();
+
+
+// responsive menu toogle*/
+let menuBtn = document.querySelector(".menu-btn")
+let menu = document.querySelector(".menu")
+
+menuBtn.addEventListener("click",function(event){
+    menu.classList.toggle("active");
+})
