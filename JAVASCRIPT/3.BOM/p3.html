@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Confirm Window</h1>
+    <p>Used to accept user acceptance.</p>
+
+    <button onclick="handler()">Dlete</button>
+
+    <script>
+        function handler() {
+            if(confirm(`are you sure want to delete an file ?`)){
+                alert(` assasination of an File is sucessful` )
+            } else {
+                alert(`file got away failed to assasinate`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -30,9 +30,19 @@ console.log(`emp=`,emp)
 
 emp.forEach(function(val,index){
     document.writeln(`<h1> ${val.name}</h1>`)
-    document.writeln(`<br/>`)
     document.writeln(`<h1> ${val.desg}</h1>`)
-    document.writeln(`<br/>`)
     document.writeln(`<h1> ${val.salary}</h1>`)
-    document.writeln(`<br/>`)
-})
+    
+});
+document.writeln(`<br/>`)
+
+
+
+// object to json array
+
+let res1 = JSON.stringify(emp);
+console.log(`json array=`,res1)
+
+// json array to object 
+let res2 = JSON.parse(res1);
+console.log(`object array=`,res2)
