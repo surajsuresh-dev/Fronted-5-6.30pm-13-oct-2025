@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>close window</h1>
+    <button onclick="handler1()">Open Window</button>
+    <button onclick="handler12()">Close Window</button>
+
+    <script>
+        var x = null;
+        function handler1() {
+           
+       
+            //open("https://anikai.to/");  //opens in new tab
+
+            x = open("https://anikai.to/","title","width=500px,height=500px;"); //open in new window
+        }
+
+        function handler12() {
+            x.close();   //closes the opened window compatible only for chrom browser
+        }
+    </script>
+</body>
+</html>
