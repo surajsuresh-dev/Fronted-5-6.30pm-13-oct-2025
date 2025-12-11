@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.hasFocus()</h1>
+
+    <p id="log"></p>
+    <button id="btn">Open Window</button>
+
+    <script>
+        let bodyEl = document.querySelector("body");
+        let log = document.getElementById("log");
+        let btn = document.getElementById("btn");
+
+        btn.onclick = function(){
+            open("https://landonorris.com/","title","width=400,height=400");
+        }
+
+        function checkDocFocus() {
+            if(document.hasFocus()) {
+                log.innerText = "This Document is in Focus";
+                bodyEl.style.backgroundColor = "lightgreen";
+            } else {
+                log.innerText = "This Document out of Focus";
+                bodyEl.style.backgroundColor = "lightcoral";
+            }                   
+        }
+
+        setInterval(checkDocFocus, 500);
+    </script>
+</body>
+</html>

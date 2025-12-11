@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RequestFullScreen & exitFullScreen </h1>
+
+    <button id="fs">Enter FullScreen</button>
+
+    <script>
+        var btn = document.getElementById("fs");
+
+        btn.onclick = function(event){
+            if(document.fullscreenElement) {
+                //if in full screen
+                document.exitFullscreen().then(res => {
+                    btn.innerText = "Enter FullScreen ";
+                }).catch(err => console.error(err.message))
+            } else {
+                //not in full screen
+                document.documentElement.requestFullscreen().then(res => {
+                    btn.innerText = "Exit FullScreen Bitc**H";
+                }).catch(err => console.error(err.message))
+            }
+            
+        }
+    </script>
+</body>
+</html>
