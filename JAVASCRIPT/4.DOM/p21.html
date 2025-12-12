@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>cookie</h1>
+    <!--  cookie is a browser variable , create browser prperty to store and
+       retriew the data -->
+
+   <div>
+    <label for="user">Enter name</label>
+    <input type="text" name="user" id="user" required>
+   </div>
+
+   <button onclick="setHandler()">Set cookie</button>
+   <button onclick="clearHandler()">Clear cookie</button>
+
+   <hr>
+
+   <h1 id="output"></h1>
+
+    <script>
+        let userEl = document.getElementById("user");
+        let outEl = document.getElementById("output");
+
+        //set cookie
+        function setHandler(){
+            let user = userEl.value;
+            // document.cookie = `name=value;optionals`;
+            document.cookie = `username=${user};expires = 13 Dec 2025 10:30:00am
+            GMT+5.30;Secure;SameSite=none`;
+            alert("Cookie set successfully");
+            window.location.reload(); //to refesh the page
+        }
+
+        //read cookie
+        function readHandler(){
+            if(document.cookie) {
+                console.log(document.cookie);
+                let res = document.cookie.split("=");
+                console.log(res);
+                outEl.innerText = `${res[0]}=${res[1]}`;
+            } else {
+                outEl.innerText = "No cookie found";
+            }
+        }
+
+        readHandler();
+
+        //clear cookie
+        function clearHandler(){
+            if(confirm(`do yo wish to delete cookie?`)) {
+                let today = new Date(); //current date
+                console.log(today);
+
+                today.setTime(today.getTime() - 1); //set time to past date or expired date
+                document.cookie = `username=;expires=${today.toGMTString()}`;
+                alert("Cookie deleted successfully");
+                window.location.reload(); //to refesh the page
+
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>
