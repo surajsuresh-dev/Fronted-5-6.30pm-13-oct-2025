@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>media Events</h1>
+
+    <pre>
+        1. onplay,
+        2. onpause,
+        3. onvolumechange,
+        4. onseeking - time bar changing (process)
+        5. onseeked  - time changed
+    </pre>
+    <hr>
+
+    <h1 id="msg"></h1>
+
+    <hr>
+
+    <video src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"  type="video/mp4"
+        controls onplay="playHan()" onpause="pauseHan()"    onvolumechange="volHan()"   
+        onseeking="seekHan()"   onseeked="seekedHan()"></video>
+
+        <hr>
+
+        <script>
+            let msg = document.getElementById("msg");
+            function playHan() {
+                msg.innerText = "started playing video";
+                msg.style.color = "green";
+            }
+
+            function pauseHan() {
+                msg.innerText = "video paused";
+                msg.style.color = "red";
+            }
+
+            function volHan() {
+                msg.innerText = "changing volume";
+                msg.style.color = "skyblue";
+            }
+
+            function seekHan() {
+                msg.innerText = "video timing is chaning";
+                msg.style.color = "pink";
+            }
+
+            function seekedHan() {
+                msg.innerText = "video timing is changed";
+                msg.style.color = "mango";
+            }
+        </script>
+</body>
+</html>

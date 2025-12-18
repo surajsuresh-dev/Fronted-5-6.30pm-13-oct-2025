@@ -14,21 +14,10 @@
     </style>
 </head>
 <body>
-    <h1>Mouse Events</h1>
+    <h1>onmouseup and onmousedown</h1>
 
-    <pre>
-        1. onmusemove
-        2. onmouseover
-        3. onmouseout
-        4. onmouseleave
-        5. onmouseenter
-        6. onmouseup
-        7. onmousedown
-        8. onmouse scroll
-        9. onmousewheel (depricated)
-    </pre>
 
-    <div class="container" onmouseenter="inHandler()" onmouseout="outHandler()">
+    <div class="container" onmouseup="inHandler()" onmousedown="outHandler()">
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero inventore ad nostrum 
             sed harum. Maiores, maxime beatae nesciunt deleniti debitis perferendis dolorem ipsa
@@ -39,11 +28,11 @@
 
         let blk = document.querySelector(".container");
         function inHandler() {
-            blk.style.backgroundColor = "teal";
+            blk.style.backgroundColor = "purple";
         }
 
         function outHandler() {
-            blk.style.backgroundColor = "aquamarine";
+            blk.style.backgroundColor = "green";
         }
     </script>
 </body>

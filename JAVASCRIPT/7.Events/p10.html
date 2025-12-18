@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Foramt (clipboard) events</h1>
+
+    <p>
+        select, cutm copy, paste
+    </p>
+
+    <div class="content">
+        <label for="">Sample Headings</label>
+        <textarea name="" id="" cols="30" rows="5" onselect="selHandler()"
+        oncopy="copyHandler()">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa aliquid ut soluta unde qui architecto, nam, provident quos veritatis, quasi eaque dolore officia quibusdam nisi blanditiis labore possimus. Dolore, atque.
+    Totam omnis id aliquid accusamus unde eligendi assumenda velit, libero quasi. Earum sint, ipsum facere soluta nostrum tempore necessitatibus vel aperiam rerum accusamus ex magnam ipsa asperiores aut explicabo quidem!
+        </textarea>
+    </div>
+
+    <hr>
+
+    <div class="content">
+        <label for="">Sample heading</label>
+        <textarea name="" id="" cols="30" rows="5" onpaste="pasteHandler()" 
+        oncut="cutHandler()"></textarea>
+    </div>
+
+    <script>
+            function selHandler() {
+                alert("content selected")
+            }
+            function copyHandler() {
+                alert("content copied")
+            }
+            function pasteHandler() {
+                alert("content pasted")
+            }
+            function cutHandler() {
+                alert("content is cut and ready to paste")
+            }
+            
+    </script>
+</body>
+</html>
