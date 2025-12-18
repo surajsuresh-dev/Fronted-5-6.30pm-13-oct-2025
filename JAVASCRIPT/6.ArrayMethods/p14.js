@@ -26,5 +26,5 @@ console.log(`nums1 =`,nums1.flat(3));
 
 console.log(`\n`);
 
-console.log(`all at once =`,nums1.flat(infinity));
+console.log(`all at once =`,nums1.flat(Infinity));
 
