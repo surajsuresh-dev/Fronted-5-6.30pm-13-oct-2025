@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number properties for float Values</h1>
+
+    <script>
+        var x = 123.345566;
+
+        console.log(`x = `,x)
+        console.log(`x = `,typeof x) //numbers
+
+        console.log(`x = `,x.toFixed(2)) //return
+        console.log(`x = `,typeof x.Fixed(4)) //string
+
+
+        console.log(`x = `,x.toPrecision(2)) //1.2e + 2
+
+        console.log(`valueof = `,x.valueOf(4)) //123.345566
+
+        //any valur to integer
+
+        console.log(`int = `, parseInt(x)) 
+        console.log(`float = `, parseFloat(x)) 
+
+
+        console.log(`\n`)
+
+        var x = Math.min();
+        console.log(`Math.min()=`,Math.min()) //Infinity
+
+        var y = Math.max();
+        console.log(`Math.min()=`,Math.max()) //-Infinity
+    </script>
+
+</body>
+</html>
