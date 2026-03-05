@@ -1,0 +1,84 @@
+Web devlopment
+
+core languauge
+1. HTML  = skeloton
+2. css  = Style sheets
+3. javascript = functionality , events, maths , DOM (documnet object model )
+ manipulation, validation, Exception handling, Api calls ,BOM (browser object model),
+ windows object , screen , server side rendering,
+
+
+ Topics
+
+ 1. Basics
+        a. variables and operators
+        b. data type
+                i.primitives
+                ii.non primitives
+        c. print statements
+        d. conditional and loops
+        e. funcyional and types
+        f. objest and types
+        g. array types
+        h. array metods
+        i. string methods
+        j. Constructors
+        k. events
+        l. BOM properties
+        m. DOM properties
+            cookies
+        n. regular experession
+        o. form validations using regular experession
+
+
+ 2. Object Oriented 
+        objects
+        objects methods
+        object properties
+        object inheritence
+        inheritance cahain
+        --proto--keyword
+        inheritence using __proto__
+        Constructors
+        constructors properties
+        class
+        class properties
+        OOPS concepts
+        Memory managment 
+            local storage
+            session storage
+        JSON
+            stringify
+            parse
+
+
+ 3. Ecmascript (ES - 6 onwards)
+        scopes
+        Hoisting
+            variables
+            metods
+        strict mode in JS
+        rest and spread operators
+        API calls using promise Constructors
+        SET constructors
+            weak sets 
+        MAP constructors (Entries)
+            weak MAP
+
+ 4. Advance JS 
+        Web sockets => both frontend and backend
+            chat apps 
+            video streaming
+            VOIP (voice over internet protocals)
+
+    superscript
+        typescript
+    libraries
+        a. React JS 
+            1. Next JS
+        b. angular JS
+        c. Vue JS
+    server side script
+        a.Node JS
+    framework
+        a.Express JS
